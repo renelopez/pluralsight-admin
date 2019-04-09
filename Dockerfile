@@ -13,6 +13,7 @@ WORKDIR /src
 RUN npm install
 
 # Test
+ENV TEAMCITY_VERSION="1.0"
 RUN npm run test:ci
 
 
