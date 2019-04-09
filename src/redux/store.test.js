@@ -3,7 +3,7 @@ import rootReducer from "./reducers/index";
 import initialState from "./reducers/initialState";
 import * as authorActions from "./actions/authorActions";
 
-it("should handle creating courses without author", () => {
+xit("should handle creating courses without author", () => {
   //arrange
   const store = createStore(rootReducer, initialState);
   const author = {

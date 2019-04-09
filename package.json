@@ -11,7 +11,7 @@
     "test:ci": "jest",
     "prebuild": "run-p clean test:ci",
     "build": "webpack --config webpack.config.prod.js",
-    "postbuild": "run-p start:api serve:build",
+    "runapi": "run-p start:api",
     "serve:build": "http-server ./build"
   },
   "jest": {

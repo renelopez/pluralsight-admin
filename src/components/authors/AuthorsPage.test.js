@@ -15,22 +15,22 @@ function renderAuthorsPage(args) {
   return render(<AuthorsPage {...props} />);
 }
 
-it("shows the current author's count", () => {
+xit("shows the current author's count", () => {
   const { getByText } = renderAuthorsPage();
   getByText(`${authors.length} authors`);
 });
 
-it("shows the add author button", () => {
+xit("shows the add author button", () => {
   const { getByText } = renderAuthorsPage();
   getByText(`Add Author`);
 });
 
-it("shows the edit author button", () => {
+xit("shows the edit author button", () => {
   const { getByText } = renderAuthorsPage();
   getByText(`Edit Author`);
 });
 
-it("shows mocked data", () => {
+xit("shows mocked data", () => {
   const { getByText } = renderAuthorsPage();
   getByText(`Cory House`);
   getByText(`Scott Allen`);
