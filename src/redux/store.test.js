@@ -38,5 +38,5 @@ it("should handle creating courses", () => {
 
   //assert
   const createdCourse = store.getState().courses[0];
-  expect(createdCourse).toEqual({ title: "Security 101" });
+  expect(createdCourse).toEqual(course);
 });
