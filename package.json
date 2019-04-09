@@ -9,8 +9,8 @@
     "start:api": "node tools/apiServer.js",
     "test": "jest --watch",
     "test:ci": "jest",
-    "prebuild": "run-p clean test:ci",
-    "build": "webpack --config webpack.config.prod.js",
+    "cleanAndTest": "run-p clean test:ci",
+    "build": "npm run clean && webpack --config webpack.config.prod.js",
     "runapi": "run-p start:api",
     "serve:build": "http-server ./build"
   },
